@@ -30,7 +30,7 @@
 
 *nanobanana proによる完成予想図 [#c88e1576]
 
-#ref(57dd06ae-9bdf-429d-9bc8-89ba835253f8.jpg,center,600px)
+<image>[57dd06ae-9bdf-429d-9bc8-89ba835253f8.jpg](https://neogamma.loader.jp/?plugin=attach&refer=%E3%82%B3%E3%82%B9%E3%83%A2%E3%82%B9%E4%BC%8A%E5%B7%9D%E8%B0%B7%E6%9C%89%E7%80%AC%E5%BA%97&openfile=nanobanana.jpg)</image>
 
 **工事中の様子 [#photo]
 #ref(nanobanana.jpg,center,300x)
