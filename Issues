@@ -1,0 +1,16 @@
+## Known Issues and Limitations
+
+While `#5chdat` is designed to be flexible and user-friendly, there are a few known limitations and behaviors to be aware of:
+
+- **Encoding Issues**: Some `.dat` files may use legacy encodings (e.g., Shift_JIS), which can result in garbled characters if not properly handled. Future versions may include automatic encoding detection or conversion.
+
+- **Line Breaks**: Threads with excessive `<BR>` tags may render poorly or create overly long pages. A cleanup or normalization step may be added in future updates.
+
+- **Fetch Errors**: In some cases, the plugin may successfully locate the `.dat` file but fail to pass the content to the rendering logic. This can result in a blank output or partial rendering.
+
+- **URL Handling**: If the provided URL is invalid or the server returns an unexpected response, the plugin may silently fail. Improved error reporting is under consideration.
+
+- **Legacy Format Variations**: Some `.dat` files may not follow the standard 5ch format, leading to parsing inconsistencies.
+
+If you encounter any of these issues, consider reporting them or contributing improvements. A more robust version is planned to address these limitations.
+
