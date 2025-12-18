@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="3D2d_X8a5FfW9HUcLd21U-FQt1p4Dp7bpGebYuCUQs8" />
 [5chdat](https://neogamma.loader.jp/?5chdat.html)
 
 *NeoGamma 起動方法 [#ue3f6a6e]
@@ -78,6 +79,14 @@ DAT URL: https://medaka.5ch.net/gameurawaza/dat/1366108733.dat
 Server = medaka.5ch.net
 Board = gameurawaza
 Thread = 1366108733
+DATサイズ = 122942 bytes
+文字コード = SJIS-win
+DAT行数: 537
+1行目フィールド数: 5)
+DAT行数: 537
+1行目フィールド数: 5
+[neogammak起動法](https://neogamma.loader.jp/?NeoGamma+%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95.html)
+
 DATサイズ = 122942 bytes
 文字コード = SJIS-win
 DAT行数: 537
