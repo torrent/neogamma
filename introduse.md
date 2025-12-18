@@ -1,5 +1,7 @@
 <meta name="google-site-verification" content="3D2d_X8a5FfW9HUcLd21U-FQt1p4Dp7bpGebYuCUQs8" />
 
+[公開にURL](https://torrent.github.io/neogamma/google862ba8f48e4e7ed7.html)
+
 [5chdat](https://neogamma.loader.jp/?5chdat.html)
 
 [成功例](https://neogamma.loader.jp/?Nikke+CDK.html#q=dat)
