@@ -1,11 +1,5 @@
-2ch DAT遺漏主題 鏡子變換機 ver.12
-http://mirrorhenkan.g.ribbon.to/
 
-DAT落ちしたスレッドをChMateで見る方法
-https://archive.org/web/web-advancedsearch.php
-
-他の亜種pukiwiki プラグイン
-<code><?php
+<?php
 // define() など。
 function plugin_v2chdat_init()
 {
@@ -364,4 +358,4 @@ function get2chdat($host, $bbs, $key)
     file_put_contents($datcache, $data, FILE_APPEND);
     return  file_get_contents($datcache);
 }
-</code>
+
