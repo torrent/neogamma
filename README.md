@@ -106,4 +106,4 @@ DAT行数: 537
 1行目フィールド数: 5)
 DAT行数: 537
 1行目フィールド数: 5
-[neogammak起動法](https://neogamma.loader.jp/?NeoGamma+%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95.html)
+[neogammak起動法]([https://neogamma.loader.jp/?NeoGamma+%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95.html](https://neogamma.loader.jp/?%E3%81%AF%E3%81%BE%E5%AF%BF%E5%8F%B8%E3%81%AE%E7%A6%8F%E8%A2%8B.html)
