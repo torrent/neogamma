@@ -3,5 +3,16 @@ http://mirrorhenkan.g.ribbon.to/
 
 DAT落ちしたスレッドをChMateで見る方法
 https://archive.org/web/web-advancedsearch.php
+** dat2ch.inc.php [#p6c7ca5d]
+|RIGHT:125|LEFT:360|c
+|~サマリ|2chのDATファイルを取得、保存ページに添付、インデックスデータの追加を行なうプラグイン。|
+|~リビジョン|1.9|
+|~対応バージョン|1.4.x|
+|~投稿者|[[ARAI]]|
+|~投稿日|&new{2004-10-17 (日) 08:53:44};|
+**説明 [#gff64db2]
+2chのDATファイルを取得、保存ページに添付、インデックスデータの追加を行なうプラグイン。~
+[[show2chdat>自作プラグイン/blog2show.inc.php]]プラグインと組み合わせて使用する。
+
 
 他の亜種pukiwiki プラグイン 他のdat取得(https://github.com/torrent/neogamma/blob/main/%E4%BB%96%E3%81%AEdata%E5%8F%96%E5%BE%97)
