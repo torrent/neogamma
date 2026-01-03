@@ -12,6 +12,15 @@ The `#5chdat` directive allows users to embed or link to archived 5ch thread dat
 You can view a working example of the `#5chdat` directive and the enhanced `#amazon()` plugin on the public wiki:
 
 - 🔗 [REQUIEM AND SILENCE – neogamma.loader.jp](https://neogamma.loader.jp/?REQUIEM+AND+SILENCE.html)
+- ## 📌 Related Documents
+
+- 🔧 [Planned Feature](./Planned%20Feature) – Upcoming improvements and design goals  
+- 🔐 [Security-Oriented Design](./Security-Oriented%20Design) – Safe plugin practices and password handling  
+- 🧭 [wikiinfomateion](./wikiinfomateion) – Plugin behavior and known issues  
+- 📖 [introduce.md](./introduce.md) – Project introduction and background  
+- 📄 [ACKNOWLEDGEMENTS.md](./ACKNOWLEDGEMENTS.md) – Credits and inspirations  
+- 🧪 [他のdat取得](./%E4%BB%96%E3%81%AEdat%E5%8F%96%E5%BE%97) – Notes on `.dat` parsing and legacy compatibility
+
 
 
 ---
