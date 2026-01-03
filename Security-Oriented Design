@@ -1,0 +1,14 @@
+### Security-Oriented Design: Manual Password Verification
+
+To ensure secure handling of `.dat` file attachments and avoid unintended behavior, we are shifting away from automated processes.
+
+Instead, we plan to implement a manual verification step:
+
+- When a user initiates a `.dat` file operation (e.g., upload or parse), the plugin will pause and display a password input form
+- The user must enter the correct password manually
+- The plugin will verify the password using the same hashing method as PukiWiki (`md5(md5($pass) . $salt)`)
+- If the password is valid, the operation proceeds; otherwise, it is aborted
+
+This approach avoids storing or exposing password hashes and ensures that all sensitive operations require explicit user intent.
+
+We believe this strikes a good balance between usability and security, especially since `.dat` operations are infrequent and typically performed by trusted users.
