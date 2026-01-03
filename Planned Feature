@@ -1,0 +1,17 @@
+### Planned Feature: Secure Password Check for Attachments
+
+We are considering implementing a password check mechanism for file attachments in PukiWiki plugins. This is to address cases where attachments silently fail due to missing or invalid passwords.
+
+However, there are important security concerns:
+
+- PukiWiki stores the admin password as a double-hashed value with a salt: `md5(md5($pass) . $salt)`
+- Accessing the password hash or salt from `pukiwiki.ini.php` within a plugin could introduce serious security risks
+- If a plugin can read the configuration file, it may be exploited to extract sensitive information or bypass authentication
+
+To mitigate this, we are exploring the following options:
+
+- Creating a dedicated password verification function within the core, exposed safely to plugins
+- Allowing plugins to request password validation without direct access to the hash or salt
+- Logging failed attachment attempts with missing or incorrect passwords for better debugging
+
+This feature is still under consideration, and we welcome feedback on secure implementation strategies.
