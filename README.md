@@ -7,6 +7,12 @@ This document outlines the basic functionality and usage of the `#5chdat` direct
 ### 🔍 What is `#5chdat`?
 
 The `#5chdat` directive allows users to embed or link to archived 5ch thread data using a simplified syntax. It is particularly useful for referencing threads stored in `.dat` format or mirrored content, enabling easier navigation and integration into wiki-based documentation or archival projects.
+## 🌐 Related Wiki Page
+
+You can view a working example of the `#5chdat` directive and the enhanced `#amazon()` plugin on the public wiki:
+
+- 🔗 [REQUIEM AND SILENCE – neogamma.loader.jp](https://neogamma.loader.jp/?REQUIEM+AND+SILENCE.html)
+
 
 ---
 
@@ -109,6 +115,7 @@ DAT行数: 537
 [neogammak起動法](https://neogamma.loader.jp/?NeoGamma+%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95.html)
 
 DATサイズ = 122942 bytes
+
 文字コード = SJIS-win
 DAT行数: 537
 1行目フィールド数: 5)
