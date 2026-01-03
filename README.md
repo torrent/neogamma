@@ -1,12 +1,20 @@
-# Specification Overview
+## 📘 Specification Overview: `#5chdat` Directive
 
-This document outlines the basic functionality and usage of the `#5chdat` directive, which is designed to simplify the embedding and referencing of 5ch (formerly 2ch) thread data within PukiWiki pages or similar environments.
+This document outlines the basic functionality and usage of the `#5chdat` directive, designed to simplify the embedding and referencing of 5ch (formerly 2ch) thread data within PukiWiki pages or similar environments.
 
-## What is `#5chdat`?
+---
+
+### 🔍 What is `#5chdat`?
 
 The `#5chdat` directive allows users to embed or link to archived 5ch thread data using a simplified syntax. It is particularly useful for referencing threads stored in `.dat` format or mirrored content, enabling easier navigation and integration into wiki-based documentation or archival projects.
 
-## Syntax
+---
+
+### 🧾 Syntax
+
+```pukiwiki
+#5chdat(URL)
+
 
 
 
