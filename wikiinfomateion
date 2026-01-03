@@ -1,0 +1,26 @@
+## Known Issues with Handling 5ch `.dat` Files in PukiWiki (as of PHP 8.3)
+
+This page documents known issues and behavioral changes when working with 5ch-style `.dat` files in PukiWiki plugins. Many of these problems stem from legacy code originally written for PHP 5.6 or earlier, which may no longer behave as expected under PHP 8.3.
+
+### Common Issues
+
+- Encoding Mismatches  
+  Older `.dat` files often use Shift_JIS encoding, which can cause garbled text or parsing errors if not properly converted to UTF-8.
+
+- Deprecated PHP Functions  
+  Legacy plugins may rely on functions like `ereg`, `split`, or `each`, which have been removed in PHP 7+.
+
+- Array Indexing Errors  
+  Some scripts assume numeric array keys starting from 1, which may lead to unexpected behavior when `explode()` or `preg_split()` is used.
+
+- File Access and Permissions  
+  PHP 8.3 enforces stricter file access rules. Ensure that file paths are sanitized and that proper permissions are set.
+
+- Regular Expression Compatibility  
+  Changes in the PCRE engine may cause older regex patterns to fail or behave differently.
+
+- Line Ending Handling  
+  Differences in handling `\r\n` vs `\n` line endings can affect how posts are split and displayed.
+
+- Assumptions About dat Format  
+  Some plugins assume a fixed number of fields per line in `.dat` files. Variations in 5ch formats can break parsing logic.
