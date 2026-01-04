@@ -1,0 +1,33 @@
+**Mitigation Implemented**  
+To prevent further tampering, a content-based filter was added directly to `plugin/edit.inc.php`, just before the `page_write()` call. The filter blocks any edits to `Menubar` that contain known spam patterns.
+
+The following logic was inserted:
+
+— Begin inserted code (in plain text) —
+
+Define a list of forbidden patterns:
+
+- hoshikuzu660798  
+- pixiv.net/users/660798  
+- fanbox.cc  
+- misskey.io/@hoshikuzu  
+- discord.gg/  
+- marshmallow-qa.com  
+- skeb.jp/@  
+- youtube.com/@hoshikuzu  
+- x.com/hoshikuzu  
+
+Then, before saving the page, check if the page is `Menubar`.  
+If so, scan the `$postdata` for any of the forbidden patterns.  
+If a match is found, block the edit and log the attempt.
+
+Example logic:
+
+If `$page === 'Menubar'`, then:
+
+- For each `$pattern` in `$ng_patterns`:  
+  - If `strpos($postdata, $pattern) !== false`:  
+    - Log the incident using `error_log()`  
+    - Stop execution with `die('This content cannot be saved (forbidden pattern detected).')`
+
+— End inserted code —
