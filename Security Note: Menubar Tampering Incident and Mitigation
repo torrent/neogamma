@@ -1,0 +1,13 @@
+### 📝 Security Note: Menubar Tampering Incident and Mitigation
+
+**Incident Summary**  
+In early January 2026, a malicious user was able to overwrite the `Menubar` page on a PukiWiki installation, despite password protection being enabled. This suggests that either:
+
+- The attacker bypassed the password mechanism via a vulnerability or misconfiguration, or  
+- The password protection was not enforced under certain conditions (e.g., via direct POST requests or plugin behavior).
+
+**Observed Behavior**  
+The attacker repeatedly inserted spam links to external profiles and services, including:
+
+- `pixiv.net/users/660798`  
+- `fanbox.cc`, `misskey.io`, `discord.gg`, `marshmallow-qa.com`, `skeb.jp`, etc.
