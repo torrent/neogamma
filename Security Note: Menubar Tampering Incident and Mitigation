@@ -1,4 +1,4 @@
-## 📝 Security Note: Menubar Tampering Incident and Mitigation
+ 📝 Security Note: Menubar Tampering Incident and Mitigation
 
 **Incident Summary**  
 In early January 2026, a malicious user was able to overwrite the `Menubar` page on a PukiWiki installation, despite password protection being enabled. This suggests that either:
