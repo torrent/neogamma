@@ -14,6 +14,9 @@ The attacker repeatedly inserted spam links to external profiles and services, i
 **Mitigation Implemented**  
 To prevent further tampering, a content-based filter was added directly to `plugin/edit.inc.php`, just before the `page_write()` call. The filter blocks any edits to `Menubar` that contain known spam patterns:
 
+**Mitigation Implemented**  
+To prevent further tampering, a content-based filter was added directly to `plugin/edit.inc.php`, just before the `page_write()` call. The filter blocks any edits to `Menubar` that contain known spam patterns:
+
 ```php
 $ng_patterns = [
     'hoshikuzu660798',
@@ -36,4 +39,5 @@ if ($page === 'Menubar') {
     }
 }
 ```
+
 
