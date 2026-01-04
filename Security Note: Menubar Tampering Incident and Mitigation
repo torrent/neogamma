@@ -1,4 +1,4 @@
-### 📝 Security Note: Menubar Tampering Incident and Mitigation
+## 📝 Security Note: Menubar Tampering Incident and Mitigation
 
 **Incident Summary**  
 In early January 2026, a malicious user was able to overwrite the `Menubar` page on a PukiWiki installation, despite password protection being enabled. This suggests that either:
@@ -11,8 +11,6 @@ The attacker repeatedly inserted spam links to external profiles and services, i
 
 - `pixiv.net/users/660798`  
 - `fanbox.cc`, `misskey.io`, `discord.gg`, `marshmallow-qa.com`, `skeb.jp`, etc.
-**Mitigation Implemented**  
-To prevent further tampering, a content-based filter was added directly to `plugin/edit.inc.php`, just before the `page_write()` call. The filter blocks any edits to `Menubar` that contain known spam patterns:
 
 **Mitigation Implemented**  
 To prevent further tampering, a content-based filter was added directly to `plugin/edit.inc.php`, just before the `page_write()` call. The filter blocks any edits to `Menubar` that contain known spam patterns:
@@ -39,5 +37,4 @@ if ($page === 'Menubar') {
     }
 }
 ```
-
 
