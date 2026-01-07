@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>README - NeoGamma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="#5chdat directive and plugin documentation for NeoGamma">
+  <meta name="google-site-verification" content="3D2d_X8a5FfW9HUcLd21U-FQt1p4Dp7bpGebYuCUQs8" />
+  <meta name="msvalidate.01" content="07997F21BB2995BC21C7DB243E8ED6EC" />
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 1em;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    code {
+      background: #f0f0f0;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 1em;
+      overflow-x: auto;
+      border-radius: 6px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+<h2>📘 Specification Overview: <code>#5chdat</code> Directive</h2>
+
+<p>This document outlines the basic functionality and usage of the <code>#5chdat</code> directive, designed to simplify the embedding and referencing of 5ch (formerly 2ch) thread data within PukiWiki pages or similar environments.</p>
+
+<h3>🔍 What is <code>#5chdat</code>?</h3>
+
+<p>The <code>#5chdat</code> directive allows users to embed or link to archived 5ch thread data using a simplified syntax. It is particularly useful for referencing threads stored in <code>.dat</code> format or mirrored content, enabling easier navigation and integration into wiki-based documentation or archival projects.</p>
+
+<h2>🌐 Related Wiki Page</h2>
+
+<ul>
+  <li>🔗 <a href="https://neogamma.loader.jp/?REQUIEM+AND+SILENCE.html">REQUIEM AND SILENCE – neogamma.loader.jp</a></li>
+</ul>
+
+<h2>📌 Related Documents</h2>
+
+<ul>
+  <li>🔧 <a href="Planned%20Feature">Planned Feature</a> – Upcoming improvements and design goals</li>
+  <li>🔐 <a href="Security-Oriented%20Design">Security-Oriented Design</a> – Safe plugin practices and password handling</li>
+  <li>🧭 <a href="wikiinfomation">wikiinfomation</a> – Plugin behavior and known issues</li>
+  <li>📖 <a href="introduce.md">introduce.md</a> – Project introduction and background</li>
+  <li>📄 <a href="ACKNOWLEDGEMENTS.md">ACKNOWLEDGEMENTS.md</a> – Credits and inspirations</li>
+  <li>🧪 <a href="%E4%BB%96%E3%81%AEdat%E5%8F%96%E5%BE%97">他のdat取得</a> – Notes on <code>.dat</code> parsing and legacy compatibility</li>
+</ul>
+
+<h2>🔐 Planned Feature: Manual Password Verification</h2>
+
+<p>To ensure secure handling of <code>.dat</code> file attachments and avoid unintended behavior, we are shifting away from automated processes.</p>
+
+<p>Instead, we plan to implement a manual verification step:</p>
+<ul>
+  <li>When a user initiates a <code>.dat</code> file operation (e.g., upload or parse), the plugin will pause and display a password input form</li>
+  <li>The user must enter the correct password manually</li>
+  <li>The plugin will verify the password using the same hashing method as PukiWiki (<code>md5(md5($pass) . $salt)</code>)</li>
+  <li>If the password is valid, the operation proceeds; otherwise, it is aborted</li>
+</ul>
+
+<p>This approach avoids storing or exposing password hashes and ensures that all sensitive operations require explicit user intent.</p>
+
+<h2>🧾 Syntax</h2>
+
+<pre><code>#5chdat(URL)</code></pre>
+
+<h2>📄 Example Output</h2>
+
+<p><a href="https://neogamma.loader.jp/?5chdat.html">5chdat 実行例を見る</a></p>
+
+<pre>
+入力URL: https://medaka.5ch.net/test/read.cgi/gameurawaza/1366108733/158
+preg_match 結果:
+$m[0] = https://medaka.5ch.net/test/read.cgi/gameurawaza/1366108733/158
+$m[1] = medaka.5ch.net
+$m[2] = gameurawaza
+$m[3] = 1366108733
+$m[4] = 158
+DAT URL: https://medaka.5ch.net/gameurawaza/dat/1366108733.dat
+✅ DAT取得成功
+Server = medaka.5ch.net
+Board = gameurawaza
+Thread = 1366108733
+DATサイズ = 122942 bytes
+文字コード = SJIS-win
+DAT行数: 537
+1行目フィールド数: 5
+</pre>
+
+<p>🧠 コメント by <strong>softchip</strong>:</p>
+<ul>
+  <li>「Wiikeyって名前、<em>チップの名前そのままハンドルにしてたの面白いよね</em>」</li>
+  <li>「昔は“いけないこと”だったけど、<em>今やると本体ごとBANされる時代</em>」</li>
+  <li>「時代が変わっても、<em>改造の誘惑とリスクは変わらない</em>なぁ…」</li>
+</ul>
+
+</body>
+</html>
